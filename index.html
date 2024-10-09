@@ -5,37 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patel Auto Detailing</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <h1>Patel Auto Detailing</h1>
-    <div class="attribution">
-      By [Dev Patel]
-    </div>
+    <header>
+      <h1>Patel Auto Detailing</h1>
+      <div class="attribution">By [Dev Patel]</div>
+    </header>
 
     <!-- Card 1: Detailing Information (Box Model Layout) -->
     <main class="card landscape card-1">
-      <div class="top">
+      <div class="header">
         <h2>Patel Auto Detailing</h2> 
-        <img src="logo.png" alt="Firefly Patel Auto car Detailing logo 61455" width="285" height="145" />
       </div>
-      
+      <img src="logo.png" alt="Patel Auto Detailing logo" width="285" height="145" />
+      <div class="services-info">
+        <h3>Our Services</h3>
+        <div>Exterior: $25</div>
+        <div>Interior: $150</div>
+      </div>
     </main>
 
     <!-- Card 2: Contact Information (Flexbox Layout) -->
     <main class="card landscape card-2">
       <div class="flex-container">
-        <div class="services-info">
-          <h3>Services Offered</h3>
-          <div>Expert exterior and interior cleaning</div>
-          <div class="price">Exterior = $25</div>
-          <div class="price">Interior = $150</div>
-        </div>
         <div class="contact-info">
           <h2>Contact Information</h2>
           <div class="address">113 Penn Lane, Dorin, CO</div>
           <div class="phone">311-555-0146</div>
-          <div class="email">Dev@autodetalling.com</div>
+          <div class="email">Dev@autodetailing.com</div>
+        </div>
+        <div class="services-info">
+          <h3>Our Services</h3>
+          <ul>
+            <li>Exterior Cleaning</li>
+            <li>Interior Cleaning</li>
+            <li>Detailing Packages</li>
+          </ul>
         </div>
       </div>
     </main>
@@ -46,7 +52,8 @@
     </footer>
 
     <div>
-      <h4>Sources</h4>
+      <ul>
+      </ul>
     </div>
   </body>
 </html>
@@ -104,9 +111,7 @@
     </footer>
 
     <div>
-      <h4>Sources</h4>
       <ul>
-        <li>List sources for images, etc. here</li>
       </ul>
     </div>
   </body>
