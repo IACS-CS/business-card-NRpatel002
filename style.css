@@ -19,10 +19,11 @@ h1 {
 
 /* Card styling */
 .card {
-    width: 400px;
+    width: 400px; /* Set width to 2 inches */
+    height: 200px; /* Set height to 3 inches */
     border-radius: 15px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 10px; /* Adjust padding to fit content */
     background-color: white; /* White background for cards */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease; /* Smooth scaling effect */
@@ -49,35 +50,30 @@ h1 {
     margin: 10px 0; /* Space around tagline */
 }
 
-/* Flexbox layout for Card 2 */
-.card-2 .flex-container {
+/* Flexbox layout for Cards 2 and 4 */
+.flex-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Align items to the start */
-}
-
-.card-2 .contact-info,
-.card-2 .services-info {
-    flex: 1;
-    margin: 0 10px; /* Space between sections */
+    flex-direction: column; /* Stack items vertically for better fit */
 }
 
 /* Business name - larger for visual hierarchy */
 h2 {
-    font-size: 1.5em;
+    font-size: 1.2em; /* Adjusted for better fit */
     font-weight: bold;
     color: #4c4d4f; /* Dark grey for business name */
-    margin-bottom: 15px; /* More space below for visual separation */
+    margin-bottom: 10px; /* More space below for visual separation */
 }
 
 /* Styling for contact info */
 .contact-info {
     text-align: left; /* Align text to the left */
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduced for better fit */
 }
 
 .contact-info h2 {
-    font-size: 1.2em;
+    font-size: 1.1em; /* Adjusted for better fit */
 }
 
 .contact-info .email {
@@ -87,12 +83,12 @@ h2 {
 /* Styling for services info */
 .services-info {
     text-align: left; /* Align text to the left */
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduced for better fit */
 }
 
 /* Heading styling */
 .services-info h3 {
-    font-size: 1.2em;
+    font-size: 1.1em; /* Adjusted for better fit */
     color: #4c4d4f; /* Dark grey for headings */
 }
 
@@ -103,7 +99,7 @@ h2 {
 }
 
 .services-info li {
-    margin-bottom: 8px; /* Space between services */
+    margin-bottom: 5px; /* Space between services */
 }
 
 /* Custom border trick for Card 1 */
@@ -126,17 +122,4 @@ h2 {
     position: absolute;
     top: -10px;
     left: 10px;
-}
-
-/* Landscape and portrait designs */
-@media (orientation: landscape) {
-    .card {
-        width: 400px;
-    }
-}
-
-@media (orientation: portrait) {
-    .card {
-        width: 300px;
-    }
 }
