@@ -88,7 +88,7 @@ h2 {
 
 /* Heading styling */
 .services-info h3 {
-    font-size: 1.1em; /* Adjusted for better fit */
+    font-size: 1.0em; /* Adjusted for better fit */
     color: #4c4d4f; /* Dark grey for headings */
 }
 
@@ -96,10 +96,12 @@ h2 {
 .services-info ul {
     list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
+    font-size: 0.8em;
 }
 
 .services-info li {
-    margin-bottom: 5px; /* Space between services */
+    margin-bottom: 0.5px; /* Space between services */
+    text-align: right;
 }
 
 /* Custom border trick for Card 1 */
