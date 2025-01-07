@@ -1,11 +1,10 @@
-
 /* General styling */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f9f9f9; /* Light grey background */
+    background-color: #f9f9f9;
     margin: 0;
     padding: 20px;
-    color: #333; /* Dark color for text */
+    color: #333;
 }
 
 header {
@@ -14,23 +13,24 @@ header {
 }
 
 h1 {
-    color: #646464; /* Dark grey color for header */
+    color: #646464;
 }
 
 /* Card styling */
 .card {
-    width: 400px; /* Set width to 2 inches */
-    height: 200px; /* Set height to 3 inches */
+    width: 400px;
+    height: 200px;
     border-radius: 15px;
     margin: 20px auto;
-    padding: 10px; /* Adjust padding to fit content */
-    background-color: white; /* White background for cards */
+    padding: 20px;
+    background-color: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    transition: transform 0.3s ease;
 }
 
+
 .card:hover {
-    transform: scale(1.05); /* Slightly scale up on hover */
+    transform: scale(1.05);
 }
 
 /* Header styling */
@@ -41,87 +41,54 @@ h1 {
 
 /* Business info styling */
 .business-info {
-    text-align: center; /* Center the text */
-    margin-top: 20px; /* Space above business info */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .tagline {
-    font-style: italic; /* Italic style for tagline */
-    margin: 10px 0; /* Space around tagline */
+    font-style: italic;
+    margin: 10px 0;
 }
 
 /* Flexbox layout for Cards 2 and 4 */
 .flex-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the start */
-    flex-direction: column; /* Stack items vertically for better fit */
+    align-items: flex-start;
 }
 
-/* Business name - larger for visual hierarchy */
-h2 {
-    font-size: 1.2em; /* Adjusted for better fit */
-    font-weight: bold;
-    color: #4c4d4f; /* Dark grey for business name */
-    margin-bottom: 10px; /* More space below for visual separation */
+.flex-container .contact-info, .flex-container .services-info {
+    flex: 1;
+    padding: 10px;
 }
 
-/* Styling for contact info */
+/* Contact info styling */
 .contact-info {
-    text-align: left; /* Align text to the left */
-    margin-bottom: 10px; /* Reduced for better fit */
+    text-align: left;
 }
 
 .contact-info h2 {
-    font-size: 1.1em; /* Adjusted for better fit */
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4c4d4f;
 }
 
 .contact-info .email {
-    color: #d9534f; /* Highlight email */
+    color: #d9534f;
 }
 
-/* Styling for services info */
-.services-info {
-    text-align: left; /* Align text to the left */
-    margin-bottom: 10px; /* Reduced for better fit */
-}
-
-/* Heading styling */
+/* Services info styling */
 .services-info h3 {
-    font-size: 1.0em; /* Adjusted for better fit */
-    color: #4c4d4f; /* Dark grey for headings */
+    font-size: 1em;
+    color: #4c4d4f;
 }
 
-/* List styling for services */
 .services-info ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    font-size: 0.8em;
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.9em;
 }
 
 .services-info li {
-    margin-bottom: 0.5px; /* Space between services */
-    text-align: right;
-}
-
-/* Custom border trick for Card 1 */
-.card-1 {
-    border-radius: 15px 50px; /* Custom border shape */
-    position: relative;
-}
-
-.card-1 .services-info {
-    margin-top: 10px;
-}
-
-.card-1 img {
-    display: block;
-    margin: 0 auto;
-}
-
-/* Absolute positioning for honors requirement */
-.card-1 h2 {
-    position: absolute;
-    top: -10px;
-    left: 10px;
+    margin-bottom: 5px;
 }
